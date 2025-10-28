@@ -1,18 +1,67 @@
+:root {
+  --kleur-geel: #ffe500;
+  --kleur-zwart: #000000;
+  --kleur-wit: #ffffff;
+  --kleur-oranje: #ff7b00;
+  --kleur-groen: #165300;
+}
+
 body {
    display: grid;
   grid-template-areas:
   "header header"
   "nav main"
   "footer footer";
-
+  
 
 }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--kleur-wit);
+  color: var(--kleur-zwart);
+}
+
+nav {
+  background-color: var(--kleur-groen);
+  padding: 1rem;
+  border-bottom: 4px solid var(--kleur-oranje);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--kleur-zwart);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: var(--kleur-geel);
+  color: var(--kleur-zwart);
+}
+
 
 header{
   grid-area: header;
+  
+  
 }
 nav{
   grid-area: nav;
+  background-color: var(--nav);
+
 }
 main{
   grid-area: main;
@@ -20,3 +69,4 @@ main{
 footer{
   grid-area: footer;
 }
+
