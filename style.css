@@ -12,17 +12,17 @@ body {
     "header header"
     "nav main"
     "footer footer";
+    grid-template-columns: 1fr 6fr;
   margin: 0;
-  font-family: Arial, sans-serif;
   background-color: var(--kleur-wit);
   color: var(--kleur-zwart);
 }
 
 nav {
   background-color: var(--kleur-groen);
-  padding: 0px;
-  border-bottom: 4px solid var(--kleur-oranje);
-  margin: 0;
+  padding: 50px;
+  border-bottom: #ff7b00;
+  border-radius: 5px;
 }
 
 nav ul {
@@ -49,6 +49,7 @@ nav ul li a:hover {
   background-color: var(--kleur-geel);
   color: var(--kleur-zwart);
 }
+
 
 header {
   grid-area: header;
