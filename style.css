@@ -11,8 +11,9 @@ body {
   grid-template-areas:
     "header header"
     "nav main"
-    "footer footer";
+    "logo footer";
     grid-template-columns: 1fr 6fr;
+    grid-template-rows: 120px 1fr 60px;
   margin: 0;
   background-color: var(--kleur-wit);
   color: var(--kleur-zwart);
@@ -21,8 +22,6 @@ body {
 nav {
   background-color: var(--kleur-groen);
   padding: 50px;
-  border-bottom: #ff7b00;
-  border-radius: 5px;
 }
 
 nav ul {
@@ -65,6 +64,47 @@ main {
   grid-area: main;
 }
 
+logo {
+  grid-area: logo;
+   position: relative;
+  background-color: #f8f8f8;
+  min-height: 100px;
+}
+
 footer {
   grid-area: footer;
+}
+
+logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+}
+
+logo-text {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+}
+
+logo-text span {
+  color: #0FA958; /* groen accent */
+}
+
+/* Donkere modus optie */
+body.dark-mode logo {
+  background-color: #111;
+}
+
+body.dark-mode .logo-text {
+  color: white;
+}
+
+body.dark-mode .logo-text span {
+  color: #FF7A00;
 }
