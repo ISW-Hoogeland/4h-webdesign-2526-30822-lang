@@ -11,9 +11,9 @@ body {
   grid-template-areas:
     "header header"
     "nav main"
-    "logo footer";
+    "nav footer";
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 120px 750px 60px;
+    grid-template-rows: 120px 780px 60px;
   margin: 0;
   background-color: var(--kleur-wit);
   color: var(--kleur-zwart);
@@ -66,7 +66,7 @@ main {
 logo {
   grid-area: logo;
    position: relative;
-  background-color: #f8f8f8;
+  background-color: var(--kleur-groen);
   min-height: 100px;
   
 }
@@ -86,14 +86,14 @@ logo {
   margin: 10px;
 }
 
-logo-text {
+.logo-text {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 22px;
   font-weight: 600;
   color: #000000;
 }
 
-logo-text span {
+ .logo-text span {
   color: #0FA958; /* groen accent */
 }
 
@@ -112,4 +112,5 @@ body.dark-mode .logo-text span {
 
 h1 {
   color: var(--kleur-wit);
+  padding: 25px;
 }
