@@ -49,6 +49,7 @@ nav ul li a:hover {
 header {
   grid-area: header;
   background-color:var(--kleur-zwart);
+  text-align: center;
 }
 
 nav {
@@ -61,7 +62,10 @@ nav {
 main {
   grid-area: main;
   background-color: var(--kleur-geel);
+  text-align: right;
+
 }
+
 
 logo {
   grid-area: logo;
@@ -94,16 +98,15 @@ logo {
 }
 
  .logo-text span {
-  color: #0FA958; /* groen accent */
+  color: #0FA958; 
 }
 
-/* Donkere modus optie */
 body.dark-mode logo {
   background-color: #000000;
 }
 
 body.dark-mode .logo-text {
-  color: white;
+  color: white;right: ;
 }
 
 body.dark-mode .logo-text span {
@@ -117,8 +120,7 @@ h1 {
 
 p {
   width: 25%;
-}
-
-section {
-  
+  font-size: 130%;
+  text-align: left;
+  display: inline-block;
 }
