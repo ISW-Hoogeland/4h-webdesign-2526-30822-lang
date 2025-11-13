@@ -13,7 +13,7 @@ body {
     "nav main"
     "nav footer";
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 120px 780px 60px;
+    grid-template-rows: 120px 800px 60px;
   margin: 0;
   background-color: var(--kleur-wit);
   color: var(--kleur-zwart);
@@ -22,12 +22,13 @@ body {
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 50px;
+  gap: 200px;
+  
 }
 
 nav ul li a {
@@ -37,6 +38,7 @@ nav ul li a {
   padding: 8px 16px;
   border-radius: 4px;
   transition: background-color 0.3s;
+  font-size: 150%;
 
 }
 
@@ -55,24 +57,15 @@ header {
 nav {
   grid-area: nav;
   background-color: var(--kleur-groen);
-  padding: 15px;
+  padding: 0px;
 
 }
 
 main {
   grid-area: main;
   background-color: var(--kleur-geel);
-  text-align: right;
+  text-align: center;
 
-}
-
-
-logo {
-  grid-area: logo;
-   position: relative;
-  background-color: var(--kleur-groen);
-  min-height: 100px;
-  
 }
 
 footer {
@@ -80,14 +73,14 @@ footer {
   background-color: var(--kleur-oranje);
 }
 
-logo {
+.logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
   position: absolute;
   bottom: 0;
   left: 0;
-  margin: 10px;
+  margin: 0px;
 }
 
 .logo-text {
@@ -101,7 +94,7 @@ logo {
   color: #0FA958; 
 }
 
-body.dark-mode logo {
+body.dark-mode .logo {
   background-color: #000000;
 }
 
@@ -119,8 +112,13 @@ h1 {
 }
 
 p {
-  width: 25%;
+  width: 40%;
   font-size: 130%;
   text-align: left;
-  display: inline-block;
+  /* display: inline-block; */
+}
+
+main article {
+  float: right;
+  width: 35%;
 }
