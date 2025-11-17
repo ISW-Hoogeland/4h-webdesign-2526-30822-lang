@@ -64,7 +64,7 @@ nav {
 main {
   grid-area: main;
   background-color: var(--kleur-geel);
-  text-align: center;
+  
 
 }
 
@@ -99,7 +99,7 @@ body.dark-mode .logo {
 }
 
 body.dark-mode .logo-text {
-  color: white;right: ;
+  color: white right;
 }
 
 body.dark-mode .logo-text span {
@@ -112,7 +112,7 @@ h1 {
 }
 
 p {
-  width: 40%;
+  width: 80%;
   font-size: 130%;
   text-align: left;
   /* display: inline-block; */
