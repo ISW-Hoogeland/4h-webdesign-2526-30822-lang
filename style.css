@@ -126,5 +126,11 @@ main article {
 .vraagteken{
 margin-left: 50px;
 margin-top: 170px;
+width: 30%;
+}
+
+.kennismaking{
+margin-left: 15px;
+margin-bottom: 80px;
 width: 25%;
 }
