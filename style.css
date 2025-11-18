@@ -13,7 +13,7 @@ body {
     "nav main"
     "nav footer";
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 120px 800px 60px;
+    grid-template-rows: 120px 825px 60px;
   margin: 0;
   background-color: var(--kleur-wit);
   color: var(--kleur-zwart);
@@ -33,18 +33,18 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: var(--kleur-oranje);
-  font-weight: bold;
-  padding: 8px 16px;
-  border-radius: 4px;
+  color: var(--kleur-zwart);
   transition: background-color 0.3s;
-  font-size: 150%;
+  font-size: 180%;
+  border-bottom: 2px solid var(--kleur-zwart);
 
 }
 
 nav ul li a:hover {
-  background-color: var(--kleur-geel);
-  color: var(--kleur-zwart);
+  background-color: var(--kleur-zwart);
+  color: var(--kleur-wit);
+  border-radius: 4px;
+  padding: 8px;
 }
 
 
@@ -56,21 +56,24 @@ header {
 
 nav {
   grid-area: nav;
-  background-color: var(--kleur-groen);
+  background-color: var(--kleur-wit);
   padding: 0px;
 
 }
 
 main {
   grid-area: main;
-  background-color: var(--kleur-geel);
+  background-color: var(--kleur-wit);
   
 
 }
 
+
 footer {
   grid-area: footer;
-  background-color: var(--kleur-oranje);
+  background-color: var(--kleur-wit);
+  text-align: right;
+  margin-top: 30px;
 }
 
 .logo {
@@ -109,6 +112,13 @@ body.dark-mode .logo-text span {
 h1 {
   color: var(--kleur-wit);
   padding: 25px;
+  display: inline-block;
+  border-bottom: 3px solid var(--kleur-zwart);
+  padding-bottom: 5px;
+}
+
+h2{
+border-bottom: 2px solid var(--kleur-zwart);
 }
 
 p {
@@ -155,4 +165,57 @@ width: 25%;
 .Jumbo2{
   margin-left: 15px;
   width: 25%;
+}
+
+.scouting1{
+  margin-left: 30px;
+  margin-bottom: 70px;
+  width: 25%;
+}
+
+.scouting_logo{
+  margin-left: 20px;
+  margin-top: 150px;
+}
+
+.werk_header{
+  background-color: var(--kleur-geel); 
+}
+
+.werk_tekst{
+color: var(--kleur-zwart);
+}
+
+.werk_nav{
+  background-color: var(--kleur-geel);
+}
+
+.sport_header{
+  background-color: var(--kleur-oranje);
+}
+
+.sport_tekst{
+  color: var(--kleur-zwart);
+}
+
+.sport_nav{
+  background-color: var(--kleur-oranje);
+}
+
+.scouting_header{
+  background-color: var(--kleur-groen);
+}
+
+.scouting_tekst{
+  color: var(--kleur-zwart);
+}
+
+.scouting_nav{
+  background-color: var(--kleur-groen);
+}
+
+.index_tekst{
+  display: inline-block;
+  border-bottom: 3px solid var(--kleur-wit);
+  padding-bottom: 5px;
 }
